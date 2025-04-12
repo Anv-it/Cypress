@@ -65,17 +65,6 @@ Cps406Project/
 
 ---
 
-## 👨‍💻 Team Members
-
-- **Anvit Bindra** — `501275606`
-- **Isaac Efrat** — `501248396`
-- **Vishal Bharti** — `501240769`
-- **Rhett Williams** — `501265397`
-- **Raiden Oreta** — `501112245`
-- **Max Quattrociocchi** — `501233904`
-
----
-
 ## 📄 License
 
 This project is for academic purposes only and is not licensed for commercial use.
