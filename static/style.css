@@ -1,0 +1,251 @@
+/* === LOGIN & SIGNUP STYLING === */
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003865;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.auth-container button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #005ea5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #004b8d;
+}
+
+.auth-container a {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    color: #005ea5;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* === GENERAL STYLING === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f6fa;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container centers everything and gives it breathing room */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* === HEADER AREA === */
+header {
+    margin-bottom: 30px;
+}
+
+/* Welcome bar includes username and logout button */
+.welcome-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9f1f7;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Welcome message */
+.welcome-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Logout button styling */
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    color: #34495e;
+}
+
+/* === MAP SECTION === */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+/* === FORM STYLING === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Form labels (above inputs) */
+form label {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+/* Text input and dropdown menu */
+input[type="text"],
+select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #003865;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on submit */
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* === RESPONSIVE DESIGN FOR SMALL SCREENS === */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .welcome-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Dashboard List Styling */
+.reportList {
+    list-style-type: none;
+}
+
+.reportList li.selected {
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+}
+
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.resolveButton {
+    background-color: #003865;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    direction: ltr;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    color: lightgray;
+    transition: color 0.2s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}

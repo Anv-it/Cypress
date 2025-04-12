@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cypress Reporting System</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="welcome-bar">
+                <span class="welcome-text">Welcome, {{ username }}!</span>
+                <a href="/logout" class="logout-btn">Logout</a>
+            </div>
+            <h1>Cypress - Report a Problem</h1>
+        </header>
+
+        <main>
+            <div id="map"></div>
+
+            <form id="reportForm">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Describe the problem..." required>
+
+                <label for="issueType">Issue Type</label>
+                <select id="issueType">
+                    <option value="Pothole">Pothole</option>
+                    <option value="Streetlight">Streetlight</option>
+                    <option value="Garbage">Garbage</option>
+                    <option value="Graffiti">Graffiti</option>
+                    <option value="Graffiti">Other</option>
+                </select>
+
+                <label for="imgContainer">Upload Image</label>
+                <div id="imgContainer">
+                    <img id="imgUploaded" src="{{ url_for('static', filename='placeholder.png') }}">
+                    <br>
+                    <input id="imgUpload" type="file" accept="image/jpeg, image/png, image/jpg" required>
+                </div>
+
+
+                <input type="submit" value="Submit Report">
+            </form>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

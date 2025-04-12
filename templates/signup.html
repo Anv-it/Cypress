@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Cypress System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>City of Toronto – Register New Account</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Choose a Username" required>
+            <input type="password" name="password" placeholder="Choose a Password" required>
+            <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+            <div>
+                <label for="subscribe">Subscribe to Notifications</label>
+                <input type="checkbox" id="subscribe">
+            </div>
+            
+            <button type="submit">Create Account</button>
+        </form>
+        <a href="/login">Already have an account? Log in here</a>
+        <div class="stars">
+            
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+    </div>
+</body>
+</html>

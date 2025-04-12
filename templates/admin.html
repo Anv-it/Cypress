@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cypress Admin Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="welcome-bar">
+                <span class="welcome-text">Welcome, {{ username }}!</span>
+                <a href="/logout" class="logout-btn">Logout</a>
+            </div>
+            <h1>Cypress - Admin Dashboard</h1>
+        </header>
+
+        <main>
+            <div id="map"></div>
+
+            <form id="reportForm" enctype="multipart/form-data" style="display: none;">
+            </form>
+            <div class="adminForm">
+                <select class="reportList" id="reportList"></select>
+                <img id="reportImage" src="" alt="Report Image" style="display: none;">
+                <button class="resolveButton" id="resolveButton" onClick="resolve()">Resolve Selected</button>
+            </div>
+                
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
